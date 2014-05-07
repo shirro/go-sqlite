@@ -1,6 +1,9 @@
 SQLite Library for Go
 =====================
 
+This fork compiles with amalgamated source from sqlcipher https://github.com/sqlcipher/sqlcipher
+to provide encrypted sqlite.
+
 To download and install this package run:
 
 go get github.com/mxk/go-sqlite/sqlite3

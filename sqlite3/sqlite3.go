@@ -26,6 +26,9 @@ package sqlite3
 #cgo CFLAGS: -DSQLITE_OMIT_TRACE=1
 #cgo CFLAGS: -DSQLITE_OMIT_UTF16=1
 #cgo CFLAGS: -DSQLITE_HAS_CODEC=1
+#cgo CFLAGS: -DSQLCIPHER_CRYPTO_OPENSSL
+#cgo LDFLAGS: /usr/lib/x86_64-linux-gnu/libcrypto.a
+#cgo LDFLAGS: -lcrypto
 
 // Fix for BusyTimeout on *nix systems.
 #cgo !windows CFLAGS: -DHAVE_USLEEP=1
